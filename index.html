@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowLog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'rgb(var(--background) / <alpha-value>)',
+              surface: 'rgb(var(--surface) / <alpha-value>)',
+              primary: 'rgb(var(--primary) / <alpha-value>)',
+              'primary-foreground': 'rgb(var(--primary-foreground) / <alpha-value>)',
+              border: 'rgb(var(--border) / <alpha-value>)',
+              text: 'rgb(var(--text) / <alpha-value>)',
+              muted: 'rgb(var(--muted) / <alpha-value>)',
+              danger: 'rgb(var(--danger) / <alpha-value>)',
+              warning: 'rgb(var(--warning) / <alpha-value>)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        /* Light Mode Defaults (RGB Triplets) */
+        --background: 255 255 255;      /* #ffffff */
+        --surface: 244 244 245;         /* zinc-100 */
+        --primary: 37 99 235;           /* blue-600 */
+        --primary-foreground: 255 255 255;
+        --border: 228 228 231;          /* zinc-200 */
+        --text: 24 24 27;               /* zinc-900 */
+        --muted: 113 113 122;           /* zinc-500 */
+        --danger: 239 68 68;            /* red-500 */
+        --warning: 245 158 11;          /* amber-500 */
+      }
+
+      .dark {
+        /* Dark Mode Overrides (RGB Triplets) */
+        --background: 9 9 11;           /* zinc-950 */
+        --surface: 24 24 27;            /* zinc-900 */
+        --primary: 59 130 246;          /* blue-500 */
+        --primary-foreground: 255 255 255;
+        --border: 39 39 42;             /* zinc-800 */
+        --text: 228 228 231;            /* zinc-200 */
+        --muted: 161 161 170;           /* zinc-400 */
+        --danger: 239 68 68;            /* red-500 */
+        --warning: 245 158 11;          /* amber-500 */
+      }
+
+      body {
+        background-color: rgb(var(--background));
+        color: rgb(var(--text));
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        overflow: hidden; /* App-like feel */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgb(var(--background));
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgb(var(--border));
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(var(--muted));
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.9"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "FlowLog",
+  "description": "A minimalist, agile project management tool featuring a daily dashboard and deadline-driven Gantt chart.",
+  "requestFramePermissions": []
+}
