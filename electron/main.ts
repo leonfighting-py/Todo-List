@@ -5,11 +5,6 @@ import path from 'path';
 declare const require: any;
 declare const __dirname: string;
 
-// 处理 Windows 安装过程中的创建快捷方式等事件
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
-
 let mainWindow: BrowserWindow | null = null;
 
 const createWindow = () => {
