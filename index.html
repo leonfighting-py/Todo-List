@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlowLog</title>
-    <!-- Tailwind 将通过本地 PostCSS 或 JS 注入，或者保留 CDN 仅用于快速原型，
-         但生产环境建议 npm install tailwindcss 并配置 postcss。
-         为了简便，这里保留 CDN，但在正式产品中建议本地化。 -->
+    <!-- 使用 Tailwind CDN 用于快速开发。生产环境建议本地安装。 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -89,10 +87,10 @@
     "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "zustand": "https://aistudiocdn.com/zustand@^5.0.9",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "electron": "https://aistudiocdn.com/electron@^39.2.6",
     "path": "https://aistudiocdn.com/path@^0.12.7",
     "vite": "https://aistudiocdn.com/vite@^7.2.6",
-    "electron": "https://aistudiocdn.com/electron@^39.2.6"
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
